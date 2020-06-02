@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{page.title}}</title>
+        <title>base converter</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
         <style>
             *{font-family: roboto, sans-serif}
@@ -20,7 +20,17 @@
     </head>
     <body>
         <main>
-        {{content}}
+        <script src="assets/js/base_convert.js"></script>
+<h1>Base Converter</h1>
+
+<h2>From base: </h2><input type="number" id="from_base_input">
+<h2>To base: </h2><input type="number" id="to_base_input">
+<h2>Value(s): </h2><input type="text" id="number_input">
+<h2>Delimiter (space by default): </h2><input type="text" id="delimiter_input">
+<h2>Character set (default=0123456789abcdefghijklmnopqrstuvwxyz): </h2><input type="text" id="charset_input">
+<h2>Output: </h2>
+<p id="number_output">placeholder</p>
+
         </main>
     </body>
 </html>
